@@ -2,7 +2,8 @@
 #define MERGER_SORT
 void Merge(int a[], int left, int right)
 {
-	int i = left,j = right,mid = (left + right)/2;
+	int mid = (left + right)/2;
+	int i = left,j = mid+1;
 	vector<int> v;
 	while (i <= mid && j <= right)
 	{
